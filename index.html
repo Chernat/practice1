@@ -1,43 +1,55 @@
 <!DOCTYPE html>
 <html>
+<head>
+  <title>Form</title>
+</head>
 
 <body>
   <form class="" action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="post">
     <fieldset>
       <legend>Personal Information:</legend>
-        <label for="surname">Surname</label><input type="text" name="surname" value="" id="surname" required autocomplete="off" placeholder="Kolya"></br>
-        <label for="name">Name</label><input type="text" name="name" value="" id="name"></br>
-        <label for="age">How old are you?</label><input type="number" name="Age" value="18" id="age"></br>
-        <label for="date-birth">Full date of birth: </label><input type="date" name="birthdate" value="" placeholder="mm/dd/yyyy" id="date-birth"></br>
-        <label for="accept">I accept the terms of the agreement</label> <input type="checkbox" name="accept" value="">
+        <label for="surname">Surname</label>
+        <input type="text" name="surname" value="" id="surname" required autocomplete="off" placeholder="Kolya"><br>
+        <label for="name">Name</label>
+        <input type="text" name="name" value="" id="name"><br>
+        <label for="age">How old are you?</label>
+        <input type="number" name="Age" value="18" id="age"><br>
+        <label for="date-birth">Full date of birth: </label>
+        <input type="date" name="birthdate" value="" placeholder="mm/dd/yyyy" id="date-birth"><br>
+        <label for="accept">I accept the terms of the agreement</label>
+        <input type="checkbox" name="accept" value="" id="accept">
     </fieldset>
 
     <fieldset>
       <legend>Registration</legend>
-      <label for="E-mail">E-mail</label><input type="email" name="email" value="" id="E-mail"></br>
-      <label for="pass">Password</label><input type="password" name="password" value="" id="pass">
+      <label for="E-mail">E-mail</label>
+      <input type="email" name="email" value="" id="E-mail"><br>
+      <label for="pass">Password</label>
+      <input type="password" name="password" value="" id="pass">
     </fieldset>
     <fieldset>
       <legend>An interesting facts about you!</legend>
       <p>Do you love cats?</p></br>
-      <label for="Yes">Yes</label><input type="radio" name="lovecats" value="Yes" id="cats"></br>
-      <label for="No">No</label><input type="radio" name="lovecats" value="No" id="cats"></br>
-      <label for="color">What is your favorite color?</label></br>
-      <input type="color" name="color" value="" id="color"></br>
-      <label for="time-sleep">What time do you go to bed?</label></br>
-      <input type="time" name="time" value="" id="time-sleep"></br>
-      <label for="cars">What your favorit brand of cars?</label></br>
-      <select class="cars" name="" id="cars">
-        <option value="BMW" >BMW</option>
+      <label for="yes">Yes</label>
+      <input type="radio" name="lovecats" value="Yes" id="yes"><br>
+      <label for="no">No</label>
+      <input type="radio" name="lovecats" value="No" id="no"><br>
+      <label for="color">What is your favorite color?</label><br>
+      <input type="color" name="color" value="" id="color"><br>
+      <label for="time-sleep">What time do you go to bed?</label><br>
+      <input type="time" name="time" value="" id="time-sleep"><br>
+      <label for="cars">What your favorit brand of cars?</label><br>
+      <select class="cars" name="favorit brand fo car" id="cars" size="3">
+        <option value="BMW">BMW</option>
         <option value="Audi">Audi</option>
-        <option value="Lada">Lada</option>
-      </select></br>
-      <label for="rate">How do you rate you work?</label></br>
-      <input type="range" name="rate-work" value="" id="rate" min="1" max="10"></br>
+        <option value="Lada" selected>Lada</option>
+      </select><br>
+      <label for="rate">How do you rate you work?</label><br>
+      <input type="range" name="rate-work" value="" id="rate" min="1" max="10"><br>
     </fieldset>
     <fieldset>
       <legend>Your comments:</legend>
-      <textarea minlength="16" maxlength="300"> </textarea>
+      <textarea minlength="16" maxlength="300" placeholder="Your comments hear"></textarea>
     </fieldset>
 
     <input type="submit" name="Submit" value="Submit">
